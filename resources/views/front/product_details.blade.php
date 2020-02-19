@@ -27,12 +27,20 @@
                 </div>
                 <div class="col-xl-9">
                     <div class="shop-detail">
-                        <div class="row">
-                            <div class="col-12">
-                                <div id="show-filter-sidebar" style="display: none;">
-                                    <h5> <i class="fas fa-bars"></i>Открыть меню</h5>
+                        <div class="mini-tab-title underline">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-xl-4">
+                                    <h2 class="title">Пицца</h2>
                                 </div>
+                                <div class="col-6 text-right">
+                                    <div id="show-filter-sidebar" style="display: none;">
+                                        <h5> <i class="fas fa-bars"></i>Меню</h5>
+                                    </div>
+                                </div>
+
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-12 col-lg-6">
                                 <div class="shop-detail_img">
                                     <div class="big-img">

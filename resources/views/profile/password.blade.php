@@ -27,7 +27,7 @@
                                     </div>
                                     <div class="col-6 text-right" style="display: none;">
                                         <div id="show-filter-sidebar" style="display: none;">
-                                            <h5> <i class="fas fa-bars"></i>Открыть меню</h5>
+                                            <h5> <i class="fas fa-bars"></i>Меню</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@
                                                 <input type="password" class="no-round-input-bg" id="password_confirmation" name="password_confirmation" required>
                                             </div>
                                             <div class="form-group col-md-6">
-                                                <button class="normal-btn submit-btn">Изменить</button>
+                                                <button class="normal-btn submit-btn">Сохранить</button>
                                             </div>
                                         </form>
                                         @if ($errors->any())

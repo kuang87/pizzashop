@@ -53,7 +53,7 @@
                     </div>
                     <div class="col-12 col-sm-4 text-sm-center text-md-left">
                         <div class="footer-quicklink">
-                            <h5>Дополнительно</h5><a href="login.html">Акции</a>
+                            <h5>Дополнительно</h5><a href="{{route('home')}}">Акции</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,6 @@
 <script src="{{asset('src/js/jquery.easing.js')}}"></script>
 <script src="{{asset('src/js/jquery.scrollUp.min.js')}}"></script>
 <script src="{{asset('src/js/jquery.zoom.min.js')}}"></script>
-{{--<script src="{{asset('src/js/parallax.js')}}"></script>--}}
 <script src="{{asset('src/js/jquery.fancybox.js')}}"></script>
 <script src="{{asset('src/js/numscroller-1.0.js')}}"></script>
 <script src="{{asset('src/js/vanilla-tilt.min.js')}}"></script>

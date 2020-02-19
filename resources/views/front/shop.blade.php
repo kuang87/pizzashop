@@ -35,7 +35,7 @@
                                     </div>
                                     <div class="col-6 text-right" style="display: none;">
                                         <div id="show-filter-sidebar" style="display: none;">
-                                            <h5> <i class="fas fa-bars"></i>Открыть меню</h5>
+                                            <h5> <i class="fas fa-bars"></i>Меню</h5>
                                         </div>
                                     </div>
                                     <div class="col-12 col-xl-8">

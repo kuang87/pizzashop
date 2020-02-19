@@ -88,10 +88,14 @@
                             </div>
                             <div class="mobile-login">
                                 <h2>Мой профиль</h2>
-                                <a href="{{ route('login') }}">Войти</a>
-                                @if (Route::has('register'))
-                                    <a href="{{ route('register') }}">Регистрация</a>
-                                @endif
+                                @guest
+                                    <a href="{{ route('login') }}">Войти</a>
+                                    @if (Route::has('register'))
+                                        <a href="{{ route('register') }}">Регистрация</a>
+                                    @endif
+                                @else
+                                    <a href="{{ route('profile') }}">{{ Auth::user()->name }}</a>
+                                @endguest
                             </div>
                         </div>
                         <div class="ogamin-mobile-menu_bg"></div>
@@ -101,7 +105,10 @@
                     <div class="mobile-menu_logo text-center d-flex justify-content-center align-items-center"><a href="{{url('/')}}"><img src="{{asset('src/images/logo.png')}}" alt=""></a></div>
                 </div>
                 <div class="col-3">
-                    <div class="mobile-product_function d-flex align-items-center justify-content-end"><a class="function-icon icon_bag_alt" href="{{route('cart')}}"></a></div>
+                    <div class="mobile-product_function d-flex align-items-center justify-content-end">
+                        <a class="function-icon icon_bag_alt" href="{{route('cart')}}"></a>
+                        <a class="pl-1" href="{{route('cart')}}"><strong>{{Cart::getTotal() > 0 ? Cart::getTotal() . '₽' : ''}}</strong></a>
+                    </div>
                 </div>
             </div>
         </div>
