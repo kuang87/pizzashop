@@ -25,7 +25,7 @@ class CheckoutController extends Controller
 
         $request->validate([
             'firstName' => 'required|min:3|max:35',
-            'email' => 'email:rfc,dns',
+            'email' => 'email:filter',
             'phone' => 'required',
             'options' => 'required',
             'paymentMethod' => 'required',
