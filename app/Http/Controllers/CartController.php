@@ -64,6 +64,7 @@ class CartController extends Controller
     public function clear()
     {
         \Cart::clear();
+        \Cart::removeCartCondition($this->condition->getName());
         return back();
     }
 
