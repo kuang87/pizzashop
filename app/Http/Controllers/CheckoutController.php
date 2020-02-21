@@ -68,6 +68,7 @@ class CheckoutController extends Controller
         }
 
         \Cart::clear();
+        \Cart::clearCartConditions();
 
         return redirect('thankyou');
     }
