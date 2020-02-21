@@ -19,7 +19,7 @@ class CheckoutController extends Controller
         }
     }
 
-    public function validate(Request $request, array $rules, array $messages = [], array $customAttributes = [])
+    public function formValidate(Request $request)
     {
         $data = $request->all();
 

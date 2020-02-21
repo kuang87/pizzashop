@@ -54,7 +54,7 @@ Route::prefix('admin')->middleware(['auth', 'admin'])->group(function (){
 
 Route::middleware('auth')->group(function (){
     Route::get('checkout', 'CheckoutController@index')->name('checkout');
-    Route::post('validate', 'CheckoutController@validate')->name('checkout-validate');
+    Route::post('validate', 'CheckoutController@formValidate')->name('checkout-validate');
     Route::get('thankyou', function (){
         return view('profile.thankyou');
     });
